@@ -4,212 +4,245 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Adrian Jamiere Frago — Computer Engineer</title>
+<meta name="description" content="Adrian Jamiere Frago — Computer Engineering graduate building where hardware meets software, now growing into front-end web development.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <svg class="bg-circuits" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-  <g class="circuit-traces">
-    <path d="M0,120 H260 V300 H520 V80 H900 V420 H1440" />
-    <path d="M0,500 H180 V680 H460 V560 H820 V760 H1150 V500 H1440" />
-    <path d="M120,0 V200 H400 V0" />
-    <path d="M1300,0 V160 H1020 V340 H1440" />
-    <path d="M0,820 H320 V900" />
-    <path d="M600,900 V760 H900 V900" />
-  </g>
-  <g class="circuit-pulses">
-    <path d="M0,120 H260 V300 H520 V80 H900 V420 H1440" />
-    <path d="M0,500 H180 V680 H460 V560 H820 V760 H1150 V500 H1440" />
-    <path d="M120,0 V200 H400 V0" />
-    <path d="M1300,0 V160 H1020 V340 H1440" />
-  </g>
-  <g class="circuit-nodes">
-    <circle cx="260" cy="120" r="4"/>
-    <circle cx="520" cy="300" r="4"/>
-    <circle cx="900" cy="80" r="4"/>
-    <circle cx="180" cy="500" r="4"/>
-    <circle cx="460" cy="680" r="4"/>
-    <circle cx="820" cy="560" r="4"/>
-    <circle cx="1150" cy="760" r="4"/>
-    <circle cx="400" cy="200" r="4"/>
-    <circle cx="1020" cy="160" r="4"/>
-  </g>
-</svg>
-  <!-- top progress trace (mobile) -->
-  <div class="trace-bar"><div class="trace-bar__fill" id="traceBarFill"></div></div>
 
-  <!-- side trace (desktop) -->
-  <nav class="rail" aria-label="Section navigation">
-    <div class="rail__line">
-      <div class="rail__line-fill" id="railFill"></div>
-    </div>
-    <ul class="rail__nodes">
-      <li><a href="#hero" data-node data-label="Boot"><span class="rail__dot"></span></a></li>
-      <li><a href="#about" data-node data-label="About"><span class="rail__dot"></span></a></li>
-      <li><a href="#skills" data-node data-label="Skills"><span class="rail__dot"></span></a></li>
-      <li><a href="#projects" data-node data-label="Projects"><span class="rail__dot"></span></a></li>
-      <li><a href="#experience" data-node data-label="Experience"><span class="rail__dot"></span></a></li>
-      <li><a href="#contact" data-node data-label="Contact"><span class="rail__dot"></span></a></li>
-    </ul>
+<header class="nav">
+  <a href="#hero" class="nav__mark" aria-label="Home"><span>AJF</span></a>
+  <nav class="nav__links">
+    <span class="nav__code" aria-hidden="true">&lt;/&gt;</span>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <header class="topbar">
-    <span class="topbar__mark">ADRIAN FRAGO</span>
-    <span class="topbar__status" id="topbarStatus">SYSTEM: BOOTING…</span>
-  </header>
+<main>
 
-  <main>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__text">
+      <p class="hero__kicker">Computer Engineering</p>
+      <h1 class="hero__title">Creating<br>with<br>purpose.</h1>
+      <p class="hero__sub">
+        Designing and developing experiences
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--fill">View my projects</a>
+        <a href="#contact" class="btn btn--line">Open to Opportunities</a>
+      </div>
+    </div>
 
-    <!-- PROFILE -->
-    <section id="hero" class="section hero">
-      <div class="hero__inner hero__inner--split">
-  <div class="hero__text">
-    <p class="eyebrow">// COMPUTER ENGINEER — CANDELARIA, PH</p>
-    <h1 class="hero__title">
-  <span class="hero__title-nowrap">Adrian Jamiere</span><br><span class="hero__title-accent">Frago</span>
-    </h1>
-    <p class="hero__tagline">
-      I build where hardware meets software — and I'm currently wiring up
-      the front end too. BS Computer Engineering grad, 2026.
-    </p>
-    <div class="hero__cta">
-      <a href="#projects" class="btn btn--primary">View Projects</a>
-      <a href="#contact" class="btn btn--ghost">Get in Touch</a>
-    </div>
-    </div>
-  <div class="hero__photo-frame">
-    <img src="Profile.jpg" alt="Adrian Jamiere Frago" class="hero__photo">
-    </div>
-    </div>
-    </section>
+    <figure class="hero__portrait">
+      <img src="images/Professional%20Profile.jpg" alt="Adrian Jamiere Frago" fetchpriority="high">
+    </figure>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <p class="section__eyebrow">01 / ABOUT</p>
-      <h2 class="section__title">Circuit-minded, systems-first.</h2>
-      <div class="about__grid">
-        <p class="about__text">
+    <div class="hero__signals" aria-label="Areas of focus">
+      <span><b>&lt;/&gt;</b> Development</span>
+      <span><b>&lt;/&gt;</b> Design</span>
+      <span><b>&lt;/&gt;</b> Innovation</span>
+      <span><b>&lt;/&gt;</b> Growth</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section--about">
+    <div class="about__heading reveal">
+      <p>Beyond the Profile</p>
+      <h2>About</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__side reveal">
+        <div class="about__photo-frame">
+          <img src="images/Professional%20Profile.jpg" alt="Adrian Jamiere Frago" class="about__photo">
+        </div>
+        <nav class="about__links" aria-label="Quick links">
+          <a href="mailto:adrianfrago566@gmail.com" aria-label="Email Adrian" title="Email Adrian">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          </a>
+          <a href="#projects" aria-label="View projects" title="View projects">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg>
+          </a>
+          <a href="#contact" aria-label="Contact Adrian" title="Contact Adrian">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </nav>
+        <p class="about__location">Candelaria, Quezon, Philippines</p>
+      </div>
+      <div class="about__body reveal">
+        <h3 class="about__name">Adrian Jamiere Frago</h3>
+        <p class="about__role">Computer Engineer · Aspiring Software Engineer</p>
+        <p>
           I recently graduated with a Bachelor of Science in Computer Engineering
-          from Manuel S. Enverga University Foundation, where I built a solid
-          foundation across hardware and software — coursework, lab exercises,
-          and project-based work that always ended with something real running
-          on a breadboard or a screen.
+          from Manuel S. Enverga University Foundation, where coursework, lab
+          exercises, and project-based work usually ended the same way — something
+          real running on a breadboard or a screen.
         </p>
-        <p class="about__text">
+        <p>
           I led the hardware–software prototype for my undergraduate thesis and
           completed an OJT in software development at CREOTEC Philippines. Right
-          now I'm expanding from Java into front-end web development — HTML, CSS,
-          and JavaScript — because I like being able to take an idea from a
-          schematic all the way to a working interface.
+          now I'm expanding from Java into front-end web development, because I
+          like carrying an idea from a schematic all the way to a working
+          interface.
         </p>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <p class="section__eyebrow">02 / SKILLS</p>
-      <h2 class="section__title">What's on the board.</h2>
-      <div class="skills__grid">
-        <div class="skill-card">
-          <span class="skill-card__tag">LANG</span>
-          <h3>Java</h3>
-          <p>Core language foundation — OOP, data structures, applied coursework.</p>
+        <div class="about__skills">
+          <h4>Technical skills</h4>
+          <ul class="about__tags">
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Embedded systems</li>
+            <li>Hardware–software integration</li>
+            <li>Prototyping</li>
+            <li>Project lifecycle</li>
+          </ul>
         </div>
-        <div class="skill-card">
-          <span class="skill-card__tag">LEARNING</span>
-          <h3>HTML / CSS / JS</h3>
-          <p>Actively building front-end skills to complement backend fundamentals.</p>
-        </div>
-        <div class="skill-card">
-          <span class="skill-card__tag">CORE</span>
-          <h3>Hardware–Software Integration</h3>
-          <p>Embedded prototyping, sensor logic, and connecting physical systems to code.</p>
-        </div>
-        <div class="skill-card">
-          <span class="skill-card__tag">PROCESS</span>
-          <h3>Project Lifecycle</h3>
-          <p>Design → prototype → test → document, end to end, from thesis to trial runs.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <p class="section__eyebrow">03 / PROJECTS</p>
-      <h2 class="section__title">Built and tested.</h2>
-
-      <article class="project-card">
-        <div class="project-card__header">
-          <span class="project-card__index">P.01</span>
-          <div>
-            <h3 class="project-card__title">PetroBrick</h3>
-            <p class="project-card__subtitle">Undergraduate Thesis — Lead Developer, Hardware–Software Prototype</p>
+        <div class="about__drivers">
+          <h4>What drives me</h4>
+          <div class="about__driver-grid">
+            <article><span>01</span><p>Taking ideas from a first sketch to a tested prototype.</p></article>
+            <article><span>02</span><p>Bringing hardware and software together to solve practical problems.</p></article>
+            <article><span>03</span><p>Growing through hands-on work and building useful things.</p></article>
           </div>
         </div>
-        <p class="project-card__desc">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section--alt">
+    <h2 class="section__title reveal">Projects</h2>
+
+    <div class="projects">
+      <article class="module reveal">
+        <div class="module__header">
+          <span class="module__tag">PCB&#8209;01</span>
+          <h3>PetroBrick</h3>
+          <p class="module__meta">Undergraduate thesis — lead developer, hardware–software prototype</p>
+        </div>
+        <p class="module__desc">
           An integrated recycling system that converts PET bottles into eco-bricks.
           I led development and implementation of the hardware–software prototype,
-          demonstrating that community-level recycling systems can meaningfully
-          reduce plastic pollution and enable sustainable building practices in
+          showing that community-level recycling systems can meaningfully reduce
+          plastic pollution and enable sustainable building practices in
           resource-limited settings.
         </p>
-        <div class="project-card__tags">
+        <div class="module__tags">
           <span>Embedded Systems</span>
           <span>Prototyping</span>
           <span>Sustainability</span>
-          <span>Hardware–Software Integration</span>
         </div>
+        <details class="module__details">
+          <summary>View details</summary>
+          <p>
+            The prototype combined sensor-driven sorting with a mechanical
+            compression stage to turn cleaned PET bottles into building-grade
+            eco-bricks, with the full build documented from design through
+            testing as part of the thesis defense.
+          </p>
+        </details>
       </article>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <p class="section__eyebrow">04 / EXPERIENCE</p>
-      <h2 class="section__title">Time on the job.</h2>
-
-      <div class="timeline">
-        <div class="timeline__item">
-          <span class="timeline__year">2025–2026</span>
-          <div class="timeline__body">
-            <h3>On-the-Job Trainee — Software/Programming</h3>
-            <p class="timeline__org">CREOTEC Philippines</p>
-            <p>Supported software and programming tasks as part of an industry OJT
-              placement, gaining hands-on exposure to real-world development workflows.</p>
-          </div>
+      <article class="module reveal">
+        <div class="module__header">
+          <span class="module__tag">PCB&#8209;02</span>
+          <h3>This portfolio</h3>
+          <p class="module__meta">Personal site — design and build</p>
         </div>
-        <div class="timeline__item">
-          <span class="timeline__year">2023–2026</span>
-          <div class="timeline__body">
-            <h3>BS Computer Engineering</h3>
-            <p class="timeline__org">Manuel S. Enverga University Foundation — Candelaria, Inc.</p>
-            <p>Academic Scholar (2023–Present). Institute of Computer Engineers of the
-              Philippines – Region IV A, and Enverga Candelaria Computer Engineering Society.</p>
-          </div>
+        <p class="module__desc">
+          The site you're looking at right now, built to present my background,
+          projects, and approach as I move from a hardware-first foundation into
+          front-end development.
+        </p>
+        <div class="module__tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <details class="module__details">
+          <summary>View details</summary>
+          <p>
+            Built from scratch as a hand-written HTML/CSS/JS project — no
+            framework — as a practical way to apply the front-end skills I'm
+            currently learning.
+          </p>
+        </details>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2 class="section__title reveal">Experience</h2>
+    <div class="timeline">
+      <div class="timeline__row reveal">
+        <span class="timeline__date">2025–2026</span>
+        <div class="timeline__content">
+          <h3>On-the-Job Trainee — Software/Programming</h3>
+          <p class="timeline__org">CREOTEC Philippines</p>
+          <p>Supported software and programming tasks as part of an industry OJT
+            placement, gaining hands-on exposure to real-world development workflows.</p>
         </div>
       </div>
-    </section>
+      <div class="timeline__row reveal">
+        <span class="timeline__date">2023–2026</span>
+        <div class="timeline__content">
+          <h3>BS Computer Engineering</h3>
+          <p class="timeline__org">Manuel S. Enverga University Foundation — Candelaria</p>
+          <p>Academic Scholar (2023–Present). Member, Institute of Computer Engineers
+            of the Philippines – Region IV A, and the Enverga Candelaria Computer
+            Engineering Society.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section section--contact">
-      <p class="section__eyebrow">05 / CONTACT</p>
-      <h2 class="section__title">Let's connect the circuit.</h2>
-      <p class="contact__text">
-        Open to entry-level roles in software development, front-end, and
-        computer engineering. Reach out — I reply fast.
-      </p>
-      <a href="mailto:adrianfrago566@gmail.com" class="btn btn--primary btn--large">
-        adrianfrago566@gmail.com
-      </a>
-      <p class="contact__location">Candelaria, Quezon, Philippines</p>
-    </section>
+  <!-- CONTACT -->
+  <section id="contact" class="section section--alt section--contact">
+    <div class="contact__inner reveal">
+      <p class="contact__eyebrow">Let's Make Things Happen</p>
+      <h2 class="contact__heading">Contact</h2>
 
-  </main>
+      <div class="contact__message">
+        <h3 class="contact__headline"><span>Exploring</span><span>New</span><span>Possibilities</span></h3>
+        <p class="contact__text">I'm ready to bring my engineering foundation to an entry-level role and keep growing as a developer.</p>
+        <a href="mailto:adrianfrago566@gmail.com" class="contact__action">
+          <span>Send me an email</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
 
-  <footer class="footer">
-    <span>© 2026 Adrian Jamiere Frago</span>
-    <span class="footer__status">STATUS: OPEN TO WORK</span>
-  </footer>
+      <div class="contact__details" aria-label="Contact details">
+        <a class="contact__detail" href="mailto:adrianfrago566@gmail.com">
+          <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>
+          <span class="contact__detail-copy"><span>Email</span><strong>adrianfrago566@gmail.com</strong></span>
+        </a>
+        <div class="contact__detail">
+          <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5m0 0 8 3 8-3v14l-8 3-8-3"/><path d="M12 8v14"/></svg></span>
+          <span class="contact__detail-copy"><span>Open to</span><strong>Entry-level software, front-end, and computer engineering roles</strong></span>
+        </div>
+        <div class="contact__detail">
+          <span class="contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <span class="contact__detail-copy"><span>Based in</span><strong>Candelaria, Quezon, Philippines</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© 2026 Adrian Jamiere Frago</span>
+  <a href="mailto:adrianfrago566@gmail.com">adrianfrago566@gmail.com</a>
+</footer>
 
 <script src="script.js"></script>
 </body>
